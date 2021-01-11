@@ -1,0 +1,120 @@
+// Base
+*{padding: 0;margin: 0;border: 0;}
+*, *::before, *:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%; font-size: 100%; line-height: 1;font-family: 'Noto Sans JP', sans-serif;font-style: 14px;-ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;background-color:#FDCA31;display: flex;justify-content: center;align-items: center;min-height: 100vh;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border:0}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+//------------------------------------------------------------//
+
+// Variable
+$textcolor : #497081;
+$border: 1px solid #497081;
+
+// Styles
+.todolist{
+    position: relative;
+    background: #fff;
+    width: 250px;
+    border-radius: 3%;
+    box-shadow: 4px 8px 12px 0px rgba(0, 0, 0, 0.1);
+
+    &__title{
+        background: #fff;
+        color: $textcolor;
+        padding: 10px 20px;
+        font-weight: 400;
+        text-align: center;
+        line-height: 30px;
+        margin: 0 35px;
+        border-bottom: 1px solid gray;
+
+        h2{
+            font-size: 20px;
+        }
+
+        p{
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__items{
+        padding: 25px;
+    }
+
+    &__item{
+        list-style: none;
+        padding: 10px 0;
+        font-size: 12px;
+        color: $textcolor;
+    }
+
+    &__label{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+
+        input{
+            visibility: hidden;
+            appearance: none;
+        }
+
+        p{
+            position: absolute;
+        }
+
+        span{
+            position: relative;
+            width: 20px;
+            height: 20px;
+            border: $border;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        input{
+            &:checked ~ p{
+                color: #ccc;
+                transition: all 0.3s ease;
+            }
+
+            &:checked ~ span{
+               border: none;
+               z-index: 1;
+               
+
+               &::before{
+                content: '';
+                position: absolute;
+                top: 5px;
+                width: 10px;
+                height: 5px;
+                border-left: $border;
+                border-bottom: $border;
+                transform: rotate(-45deg);
+                z-index: 2;
+               }
+            }
+        }
+
+    }
+
+    
+}
+
+
+
