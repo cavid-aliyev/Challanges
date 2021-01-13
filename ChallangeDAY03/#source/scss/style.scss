@@ -1,0 +1,51 @@
+// Base
+*{padding: 0;margin: 0;border: 0;}
+*, *::before, *:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+:focus, :active{outline: none;}
+a:focus, a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;width: 100%; font-size: 100%; line-height: 1;font-style: 14px;-ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;background:linear-gradient(to top right, #c3a978 0%, #22a533 100%);display: flex;justify-content: center;align-items: center;min-height: 100vh;}
+input,button,textarea{font-family: inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border:0}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: inherit;}
+//------------------------------------------------------------//
+
+.box {
+    // Grid CSS
+	display: grid;
+	grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: repeat(20,1fr);
+    
+
+    width: 400px;
+    height: 400px;
+    border-radius: 2%;
+	overflow: hidden;
+    background: #fff;
+}
+
+.cube{
+    width: 40px;
+    height: 40px;
+	background: #99840c;
+	border: 1px solid rgba(white, 0.1);
+	
+	// Click cursor on hover
+	cursor: pointer;
+	//ON HOVER
+	&:hover{
+		background: rgba(grey, 0.1);
+	}
+}
+
+.hover{
+   background: #fff;
+}
+
+
