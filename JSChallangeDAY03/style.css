@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background: #0f1924;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.img__item{
+    position: relative;
+    max-width: 540px;
+    background-color: #fff;
+}
+
+.img__item img{
+    max-width: 100%;
+    height: auto;
+}
+
+.img__item .img__text{
+    padding: 20px 0;
+    text-align: center;
+}
+
+.img__item .img__text .img__title{
+    color: #111;
+}
+
+
