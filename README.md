@@ -29,6 +29,6 @@ Different and interesting challenges in **Css** and **JavaScript**
 # Day 2 - [Todo with JS](https://github.com/cavid-aliyev/Challanges/tree/master/JSChallangeDAY02)
 <a href="(https://github.com/cavid-aliyev/Challanges/tree/master/JSChallangeDAY02"><img src="assets/todojs.png" title="todojs"/></a>
 
-# Day 3 - [3d Slider witj Swiper lib](https://github.com/cavid-aliyev/Challanges/tree/master/JSChallangeDAY03)
+# Day 3 - [3d Slider with Swiper lib](https://github.com/cavid-aliyev/Challanges/tree/master/JSChallangeDAY03)
 <a href="(https://github.com/cavid-aliyev/Challanges/tree/master/JSChallangeDAY03"><img src="assets/jsslide.png" title="slidejs"/></a>
 
